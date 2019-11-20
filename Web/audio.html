@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>背景音乐</title>
+  <style>
+    audio {
+      width: 0px;
+      height: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 放置在页面什么位置都可以，提示文本和音乐也可以随意替换，样式也可以随意替换，但是audio的样式最好是保留为高宽都是0，看不见，如果不喜欢一直循环播放，可以去掉loop属性 -->
+  <span>
+    <audio id="myaudio" loop src="https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=8&tbOssInfo.obid=1"></audio>
+    <label>
+      <input type="checkbox" id="checkaudio">播放背景音乐
+    </label>
+  </span>
+  啊方法
+
+  <!-- script标记一定要在最下方 ，如果元素的id修改了，需要做对应的修改 -->
+  <script>
+    let checkaudio = document.getElementById('checkaudio');
+    let myaudio = document.getElementById('myaudio');
+    checkaudio.addEventListener('change', function () {
+      console.log(checkaudio.checked);
+      if (checkaudio.checked) {
+        myaudio.play();
+      } else {
+        myaudio.pause();
+      }
+    });
+  </script>
+</body>
+
+</html>
