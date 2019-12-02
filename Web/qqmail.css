@@ -51,3 +51,15 @@ footer {
   /* fixed定位会丢失的宽度，需要指定宽度 */
   width: 100%;
 }
+
+/* 中间区域是左右两块，都是整体居中 */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+/* 中间区域左边模块样式 */
+.main-left {
+  margin-right: 4rem;
+}
