@@ -1,0 +1,95 @@
+body {
+  background-color: #ededed;
+  color: #181818;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+  background: #ededed;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.mr {
+  margin-right: 1.5rem;
+}
+
+.a1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.a2 {
+  display: flex;
+  align-items: center;
+}
+
+.a3 {
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.a4 {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.a5 {
+  padding: 0.5rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.a6 {
+  background-color: #ffffff;
+  padding: 0.1rem;
+}
+
+.border {
+  border: 5px solid #ededed;
+  background-color: #ededed;
+}
+
+.a7 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a8 {
+  margin-right: 0.5rem;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+  background: #ededed;
+}
+
+footer>div {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0px;
+  border-top: 1px solid #dcdcdc;
+  align-items: flex-end;
+}
+
+footer .iconfont {
+  font-size: 2rem;
+}
+
+.active-icon {
+  color: #08c261;
+}
