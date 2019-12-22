@@ -61,6 +61,11 @@ header>div {
   background-color: #ededed;
 }
 
+.border1 {
+  border: 1px solid #ededed;
+  margin-left: 10%;
+}
+
 .a7 {
   display: flex;
   justify-content: space-between;
