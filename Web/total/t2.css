@@ -50,3 +50,31 @@ body {
   right: 0px;
   top: 50%;
 }
+
+.mybg {
+  background-image: url('https://klcxy.top/myoss/common/queryOssUrl?tbOssInfo.oiid=98&tbOssInfo.obid=3');
+  background-size: cover;
+  /* 背景固定 */
+  background-attachment: fixed;
+  width: 400px;
+  height: 300px;
+}
+
+.mytitle {
+  /* 
+  rgba 红，绿，蓝，透明度
+  颜色取值范围是0-255
+  透明度是0-1，0是全透明，1是不透明
+  */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myop {
+  /* 元素透明，取值0-1，0是全透，1是不透明 */
+  opacity: 0.5;
+}
+
+.myfilter {
+  /* 滤镜模糊 */
+  filter: blur(2px);
+}
