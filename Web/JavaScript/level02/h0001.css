@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* 去掉滚动条 */
+  overflow: hidden;
+}
+
+/* 导航样式 */
+nav {
+  /* 固定到下方 */
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  /* 内容居中 */
+  display: flex;
+  justify-content: center;
+}
+
+.navs span {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.navs span:hover {
+  /* 导航栏的鼠标悬停效果 */
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.navs {
+  position: relative;
+}
+
+.bar {
+  background-color: #ff0000;
+  height: 0.2rem;
+  width: 33.33333%;
+  position: absolute;
+  left: 0%;
+  /* 过渡动画 left属性发生变化要1s的过渡时间 */
+  transition: left 0.5s;
+}
+
+/* 全屏的页面样式 */
+.pages {
+  /* 相对定位 */
+  position: relative;
+  /* 高度设置为全屏 vh是浏览器可视区域高度百分比 */
+  height: 100vh;
+}
+
+/* 全屏页面 */
+#page01 {
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  background-image: url('01.jpg');
+  position: absolute;
+}
+
+#page02 {
+  height: 100%;
+  background-image: url('02.jpg');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+#page03 {
+  height: 100%;
+  background-image: url('03.jpg');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 100%;
+}
+
+@keyframes move-out {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* 移动出去的class */
+.move-out {
+  animation: move-out 1s;
+  /* !important表示强制样式生效 */
+  left: -100% !important;
+}
+
+/* 从右边进来的动画 */
+@keyframes move-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in {
+  animation: move-in 1s;
+  left: 0% !important;
+}
+
+
+@keyframes move-out-right {
+
+  /* 从右边出去 */
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.move-out-right {
+  animation: move-out-right 1s;
+  left: 100% !important;
+}
+
+@keyframes move-in-right {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.move-in-right {
+  animation: move-in-right 1s;
+  left: 0% !important;
+}

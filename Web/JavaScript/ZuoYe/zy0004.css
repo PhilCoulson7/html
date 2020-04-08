@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../level02/01.jpg');
+  background-size: cover;
+  /* 背景图片固定，不会随滚动条滚动 */
+  background-attachment: fixed;
+}
+
+.mydiv {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  margin: 10px;
+  border-top: 1px solid #ffffff;
+  width: 10rem;
+  height: 0px;
+}
+
+.sj {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid #ff00ff;
+  transform: scale(5);
+  margin: 20rem;
+}
